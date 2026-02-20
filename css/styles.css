@@ -1,6 +1,7 @@
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
   text-align: center;
@@ -8,12 +9,13 @@ body {
   min-height: 100vh;
 }
 
+
 h1 {
   margin-bottom: 30px;
   font-size: 1.8rem;
 }
 
-/* CONTENEDOR RESPONSIVE */
+/* Contenedor: flex, alineación y separación */
 .contenedor {
   display: flex;
   justify-content: center;
@@ -22,10 +24,10 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* TARJETAS ADAPTATIVAS */
+/* Tarjeta: fondo, borde redondeado, sombra y padding */
 .tarjeta {
   width: 90%;
-  max-width: 300px; /* antes era 320 fijo */
+  max-width: 300px;
   background: #111;
   border-radius: 20px;
   padding: 15px;
@@ -38,26 +40,25 @@ h1 {
 .tarjeta:hover {
   transform: scale(1.05);
   border: 2px solid #00ffcc;
-  box-shadow: 0 0 30px #00ffcc;
+  box-shadow: 0 0 30px #ff00e6;
 }
 
-/* IMAGEN AJUSTADA */
+/* Imagen dentro de tarjeta: tamaño, ajuste y borde */
 .tarjeta img {
   width: 100%;
-  height: auto;          /* se adapta sola */
-  max-height: 280px;     /* límite para que no sea gigante */
-  object-fit: contain;   /* NO recorta */
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
   border-radius: 15px;
   margin-bottom: 10px;
 }
 
-
-/* TEXTO MÁS COMPACTO */
 .tarjeta p {
   font-size: 0.9rem;
   margin: 5px 0;
 }
 
+/* Botón: color, borde, padding y cursor */
 button {
   padding: 10px 18px;
   margin-top: 20px;
@@ -69,10 +70,12 @@ button {
   cursor: pointer;
 }
 
+
 button:hover {
-  background: #00ffaa;
+  background: #8d8df2;
 }
 
+/* Imagen API: tamaño, borde y sombra */
 #imagenAPI {
   margin-top: 25px;
   width: 90%;
